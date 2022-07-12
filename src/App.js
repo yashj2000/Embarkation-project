@@ -27,200 +27,79 @@ import {Table} from 'antd';
 function App() {
   const data =[
     {
-
-      Task_name: 'name1',
-      Environment_name : 'env',
-      Request_data:'data',
-      Response_data :'data22',
-      Due_date:23,
-      Created_date:24,
-      Start_date: 1,
+      ship:'DREAM',
+      embarkation_counts:100,
+      oci_completed :100,
+      moci_completed:33,
+      checkin_time:'12:50',
+      onboard_time:2,
       key:'1'
-
     },
     {
-
-    
-
-      Task_name: 'name2',
-      Environment_name : 'env',
-      Request_data:'data',
-      Response_data :'data22',
-      Due_date:23,
-      Created_date:24,
-      Start_date: 1,
-      key:'1'
-  
+      ship:'MAGIC',
+      embarkation_counts:100,
+      oci_completed :100,
+      moci_completed:10,
+      checkin_time:'07:00',
+      onboard_time:2,
+      key:'2'
     },
     {
-
-    
-
-    Task_name: 'name3',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name4',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name5',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name6',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name7',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name7',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name7',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name7',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },{
-
-    
-
-    Task_name: 'name7',
-    Environment_name : 'env',
-    Request_data:'data',
-    Response_data :'data22',
-    Due_date:23,
-    Created_date:24,
-    Start_date: 1,
-    key:'1'
-
-  },
+      ship:'SCARLET',
+      embarkation_counts:100,
+      oci_completed :90,
+      moci_completed:100,
+      checkin_time:'19:00',
+      onboard_time:2,
+      key:'3'
+    },
+    {
+      ship:'VALIANT',
+      embarkation_counts:100,
+      oci_completed :100,
+      moci_completed:100,
+      checkin_time:'12:10',
+      onboard_time:2,
+      key:'4'
+    }
   ]
 const columns = [
   {
-    title:'taskName ',
-    dataIndex:'Task_name',
+    title:'SHIP NAME',
+    dataIndex:'ship',
     key:'key'
   },
   {
-    title:' Environment_name ',
-    dataIndex:'Task_name',
+    title:' EC ',
+    dataIndex:'embarkation_counts',
     key:'key'
   },
   {
-    title:'Request_data ',
-    dataIndex:'Task_name',
+    title:'OCI ',
+    dataIndex:'oci_completed',
     key:'key'
   },
   {
-    title:'Response_data ',
-    dataIndex:'Task_name',
+    title:'MOCI ',
+    dataIndex:'moci_completed',
     key:'key'
   },
   {
-    title:'Due_date ',
-    dataIndex:'Task_name',
+    title:'CHECK IN ',
+    dataIndex:'checkin_time',
     key:'key'
   },
   {
-    title:'Created_date ',
-    dataIndex:'Task_name',
+    title:'ONBOARD TIME',
+    dataIndex:'onboard_time',
     key:'key'
-  },
-  {
-    title:'Start_date ',
-    dataIndex:'Task_name',
-    key:'key'
-  },
-  {
-    title:'Status ',
-    dataIndex:'Task_name',
-    key:'key'
-  },
-  
+  }
 ]
 
   return (
     <div className="App">
       <header className="App-header">
-        {/* <Button type='primary'>Add Task</Button> */}
-        
-
+  
 
         <Table 
         dataSource={data}
